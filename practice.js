@@ -1,11 +1,15 @@
-// Count Truthy
+// String Properties
 
-const array = [1, 2, 3, null, undefined];
+const movie = {
+  title: 'a',
+  Year: 2020,
+  director: 'b',
+  rate: 5.4,
+};
 
-console.log(countTruthy(array));
+showProperties(movie);
 
-function countTruthy(array) {
-  let count = 0;
-  for (let value of array) if (value) count++;
-  return count;
+function showProperties(object) {
+  for (let key in object)
+    if (typeof object[key] !== 'number') console.log(key, object[key]);
 }
