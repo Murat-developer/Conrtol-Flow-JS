@@ -1,15 +1,10 @@
-// String Properties
+// Multiples of 3 and 5 numbers
 
-const movie = {
-  title: 'a',
-  Year: 2020,
-  director: 'b',
-  rate: 5.4,
-};
+console.log(sum(10));
 
-showProperties(movie);
-
-function showProperties(object) {
-  for (let key in object)
-    if (typeof object[key] !== 'number') console.log(key, object[key]);
+function sum(limit) {
+  let count = 0;
+  for (let num = 1; num <= limit; num++)
+    if (num % 3 === 0 || num % 5 === 0) count += num;
+  return count;
 }
