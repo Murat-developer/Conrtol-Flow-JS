@@ -1,11 +1,7 @@
-// Basics
-// Initialize Camel Notations
-// Can't be a  reserved keyword
-// Should be meaningful
-// Can't start with a number
-// Can't contain a space or hyphen
-// Are case sensitive
+// Primitive Types / Value Types
 
-let name = 'Murat';
-let lastName = 'Akhmedov';
-console.log(name);
+let name = 'Murod'; // String Literal
+let age = 67; // Number Literal
+let isApproved = false; // Boolean Literal
+let firstName = undefined;
+let selectedColor = null;
