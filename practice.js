@@ -1,17 +1,5 @@
-// Falsy Values
+// Precedence of Operators
 
-// undefined
-// null
-// 0
-// false
-// ''
-// NaN
+let x = (2 + 3) * 4;
 
-// Anything that is not Falsy -> Truthy
-
-// Short - circuting
-
-const userColor = undefined;
-const defaultColor = 'yellow';
-const currentColor = userColor || defaultColor;
-console.log(currentColor);
+console.log(x);
