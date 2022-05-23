@@ -1,7 +1,18 @@
-// If... else Statement
+// Switch and Case Statements
 
-const hour = 10;
+const person = 'guest';
 
-if (hour >= 6 && hour < 12) console.log('Morning');
-else if (hour >= 12 && hour < 18) console.log('Afternoon');
-else console.log('Evening');
+switch (person) {
+  case 'guest':
+    console.log('Guest');
+    break;
+  case 'visit':
+    console.log('Visitor');
+    break;
+  default:
+    console.log('Admin');
+}
+
+// if (person === 'guest') console.log('Guest');
+// else if (person === 'visit') console.log('Visitor');
+// else console.log('Admin');
