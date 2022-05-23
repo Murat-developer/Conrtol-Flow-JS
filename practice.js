@@ -1,8 +1,6 @@
-// Function Declaration
-// Perfoming are tasks or Calculates the Value
-
-function greet(name, lastName) {
-  // pramader
-  console.log('Hello ' + name + ' ' + lastName);
+// Types of Functions
+// Calculating a value
+function square(number) {
+  return number * 3;
 }
-greet('John', 'Smith'); // argument
+console.log(square(3));
