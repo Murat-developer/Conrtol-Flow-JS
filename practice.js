@@ -1,8 +1,8 @@
-// While Loop
+// Do...While Loop
 
-let number = 1;
+let number = 11;
 
-while (number <= 6) {
-  if (number % 3 === 0) console.log(number);
+do {
+  if (number % 2 !== 0) console.log(number);
   number++;
-}
+} while (number <= 8);
