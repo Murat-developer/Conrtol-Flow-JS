@@ -1,10 +1,11 @@
-// Even adn Odd
+// Count Truthy
 
-showNumbers(6);
+const array = [1, 2, 3, null, undefined];
 
-function showNumbers(limit) {
-  for (let num = 1; num <= limit; num++) {
-    const info = num % 2 === 0 ? 'EVEN' : 'ODD';
-    console.log(num, info);
-  }
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) if (value) count++;
+  return count;
 }
