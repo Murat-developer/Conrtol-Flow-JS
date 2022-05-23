@@ -1,6 +1,19 @@
-// Ternary Operator or
-// Conditional Operator
+// Logical Operators
 
-const points = 110;
-const type = points >= 100 ? 'Gold' : 'Silver';
-console.log(type);
+// Logical AND (&&)
+// Returns TRUE if both operands are TRUE
+
+// Logical OR (||)
+// Returns TRUE if one of the operands is TRUE;
+
+// NOT (!) Operator
+
+const highIncome = false;
+const creditScore = false;
+const eligibleForLoan = highIncome || creditScore;
+console.log('Eligible For Loan', eligibleForLoan);
+
+// NOT (!) Operators
+
+const applicationRefused = !eligibleForLoan;
+console.log('Application Refused', applicationRefused);
