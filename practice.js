@@ -10,7 +10,8 @@ function calculateGrade(input) {
   return 'C';
 }
 // Single Responsibility Principle
-function calcualateAverage(number) {
+function calculateAverage(number) {
+  let count = 0;
   for (let value of number) count += value;
   return count / number.length;
 }
