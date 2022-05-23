@@ -1,11 +1,17 @@
-// Show Stars
+// Show Primes
 
-showStars(6);
+showPrimes(10);
 
-function showStars(rows) {
-  for (let row = 1; row <= rows; row++) {
-    let sum = '';
-    for (let star = 1; star <= row; star++) sum += '*';
-    console.log(row, sum);
+function showPrimes(limit) {
+  for (let number = 2; number <= limit; number++) {
+    if (isPrime(number)) console.log(number);
   }
+}
+// Single Responsible Principle
+
+function isPrime(number) {
+  for (let factor = 2; factor < number; factor++)
+    if (number % factor === 0) return false;
+
+  return true;
 }
