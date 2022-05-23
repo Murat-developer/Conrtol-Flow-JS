@@ -1,18 +1,5 @@
-// Switch and Case Statements
+// For Loop
 
-const person = 'guest';
-
-switch (person) {
-  case 'guest':
-    console.log('Guest');
-    break;
-  case 'visit':
-    console.log('Visitor');
-    break;
-  default:
-    console.log('Admin');
+for (let i = 1; i <= 6; i++) {
+  if (i % 2 !== 0) console.log(i);
 }
-
-// if (person === 'guest') console.log('Guest');
-// else if (person === 'visit') console.log('Visitor');
-// else console.log('Admin');
