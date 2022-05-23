@@ -1,19 +1,10 @@
-// Demerit Points
+// Even adn Odd
 
-checkSpeed(100);
+showNumbers(6);
 
-function checkSpeed(speed) {
-  const speedLimit = 70;
-  const kmPerPoint = 5;
-
-  if (speed < speedLimit + kmPerPoint) {
-    console.log('OK');
-    return;
-  }
-
-  const point = Math.floor((speed - speedLimit) / kmPerPoint);
-  if (point >= 12) console.log('Leicense Suspended');
-  else {
-    console.log('Point', point);
+function showNumbers(limit) {
+  for (let num = 1; num <= limit; num++) {
+    const info = num % 2 === 0 ? 'EVEN' : 'ODD';
+    console.log(num, info);
   }
 }
