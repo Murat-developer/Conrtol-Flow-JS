@@ -1,9 +1,9 @@
-// Exercise - 2
+// Exercise - 3
 
-// Max of two numbers
+// isLandscape of Portrait
 
-console.log(max(55, 67));
+console.log(isLandscape(55, 76));
 
-function max(a, b) {
-  return a >= b ? a : b;
+function isLandscape(width, height) {
+  return width > height;
 }
