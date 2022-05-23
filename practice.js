@@ -1,11 +1,7 @@
-// Exercise -1
-//  Swapping Variables
+// If... else Statement
 
-let a = 'red';
-let b = 'blue';
-let c = a;
-a = b;
-b = c;
+const hour = 10;
 
-console.log(a);
-console.log(b);
+if (hour >= 6 && hour < 12) console.log('Morning');
+else if (hour >= 12 && hour < 18) console.log('Afternoon');
+else console.log('Evening');
