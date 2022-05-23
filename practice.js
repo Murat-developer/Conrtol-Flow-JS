@@ -1,7 +1,5 @@
-// Primitive Types / Value Types
+// Dynamic Typing of Javascript
 
-let name = 'Murod'; // String Literal
-let age = 67; // Number Literal
-let isApproved = false; // Boolean Literal
-let firstName = undefined;
-let selectedColor = null;
+// Static  =  string name = 'John';
+
+// Dynamic = let name = 'John';
