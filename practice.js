@@ -1,12 +1,11 @@
-// Comprations Operator
+// Equality Operator
 
-let x = 1;
+// Strict Equality Operator
+// will check same (Type + Value)
+console.log(1 === 1);
+console.log('1' === 1);
 
-console.log(x > 0);
-console.log(x >= 1);
-console.log(x < 1);
-console.log(x <= 1);
-
-// Equalit Operators
-console.log(x === 1);
-console.log(x !== 1);
+// Lose Equality Operator
+// will check only (Value)
+console.log(1 == '1');
+console.log(1 == 1);
