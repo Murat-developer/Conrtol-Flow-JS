@@ -1,11 +1,6 @@
-// Equality Operator
+// Ternary Operator or
+// Conditional Operator
 
-// Strict Equality Operator
-// will check same (Type + Value)
-console.log(1 === 1);
-console.log('1' === 1);
-
-// Lose Equality Operator
-// will check only (Value)
-console.log(1 == '1');
-console.log(1 == 1);
+const points = 110;
+const type = points >= 100 ? 'Gold' : 'Silver';
+console.log(type);
