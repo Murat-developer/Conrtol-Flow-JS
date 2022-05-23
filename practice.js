@@ -1,12 +1,6 @@
-//  Objects
-const person = {
-  name: 'Murod',
-  age: 67,
-};
-// Dot Notation
-person.name = 'John';
-// Bracket Notation
-person['name'] = 'William';
+// Arrays
 
-console.log(person);
-console.log(person.name);
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 6;
+
+console.log(selectedColors.length);
