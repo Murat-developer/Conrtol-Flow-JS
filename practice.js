@@ -1,8 +1,10 @@
-// Do...While Loop
+// For in Loop
 
-let number = 11;
+const person = {
+  name: 'Murod',
+  age: 67,
+};
 
-do {
-  if (number % 2 !== 0) console.log(number);
-  number++;
-} while (number <= 8);
+for (const key in person) {
+  console.log(key, person[key]);
+}
