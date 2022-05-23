@@ -1,10 +1,7 @@
-// For in Loop
+// For of Loop
 
-const person = {
-  name: 'Murod',
-  age: 67,
-};
+const colors = ['red', 'blue', 'yellow'];
 
-for (const key in person) {
-  console.log(key, person[key]);
+for (const value of colors) {
+  console.log(value);
 }
