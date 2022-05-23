@@ -1,19 +1,17 @@
-// Logical Operators
+// Falsy Values
 
-// Logical AND (&&)
-// Returns TRUE if both operands are TRUE
+// undefined
+// null
+// 0
+// false
+// ''
+// NaN
 
-// Logical OR (||)
-// Returns TRUE if one of the operands is TRUE;
+// Anything that is not Falsy -> Truthy
 
-// NOT (!) Operator
+// Short - circuting
 
-const highIncome = false;
-const creditScore = false;
-const eligibleForLoan = highIncome || creditScore;
-console.log('Eligible For Loan', eligibleForLoan);
-
-// NOT (!) Operators
-
-const applicationRefused = !eligibleForLoan;
-console.log('Application Refused', applicationRefused);
+const userColor = undefined;
+const defaultColor = 'yellow';
+const currentColor = userColor || defaultColor;
+console.log(currentColor);
