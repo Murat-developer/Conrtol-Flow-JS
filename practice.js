@@ -1,11 +1,19 @@
-// FizzBuzz
+// Demerit Points
 
-console.log(fizzBuzz(15));
+checkSpeed(100);
 
-function fizzBuzz(input) {
-  if (typeof input !== 'number') return NaN;
-  else if (input % 3 === 0 && input % 5 === 0) return 'FizzBuzz';
-  else if (input % 3 === 0) return 'Fizz';
-  else if (input % 5 === 0) return 'Buzz';
-  return input;
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const kmPerPoint = 5;
+
+  if (speed < speedLimit + kmPerPoint) {
+    console.log('OK');
+    return;
+  }
+
+  const point = Math.floor((speed - speedLimit) / kmPerPoint);
+  if (point >= 12) console.log('Leicense Suspended');
+  else {
+    console.log('Point', point);
+  }
 }
