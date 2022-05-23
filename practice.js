@@ -1,10 +1,16 @@
-// Multiples of 3 and 5 numbers
+// Grade
+const marks = [80, 80, 50];
 
-console.log(sum(10));
+console.log(calculateGrade(marks));
 
-function sum(limit) {
-  let count = 0;
-  for (let num = 1; num <= limit; num++)
-    if (num % 3 === 0 || num % 5 === 0) count += num;
-  return count;
+function calculateGrade(input) {
+  const average = calculateAverage(input);
+  if (average < 70) return 'A';
+  if (average < 80) return 'B';
+  return 'C';
+}
+// Single Responsibility Principle
+function calcualateAverage(number) {
+  for (let value of number) count += value;
+  return count / number.length;
 }
