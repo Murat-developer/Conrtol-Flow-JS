@@ -1,5 +1,8 @@
-// For Loop
+// While Loop
 
-for (let i = 1; i <= 6; i++) {
-  if (i % 2 !== 0) console.log(i);
+let number = 1;
+
+while (number <= 6) {
+  if (number % 3 === 0) console.log(number);
+  number++;
 }
