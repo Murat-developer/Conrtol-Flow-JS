@@ -1,5 +1,12 @@
-// Dynamic Typing of Javascript
+//  Objects
+const person = {
+  name: 'Murod',
+  age: 67,
+};
+// Dot Notation
+person.name = 'John';
+// Bracket Notation
+person['name'] = 'William';
 
-// Static  =  string name = 'John';
-
-// Dynamic = let name = 'John';
+console.log(person);
+console.log(person.name);
